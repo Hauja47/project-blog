@@ -1,6 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustaBlog", "JustaBlog\JustaBlog.csproj", "{DABDBC30-D277-4AFE-AA54-EFF7CD27A325}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustaBlog.API", "JustaBlog.API\JustaBlog.API.csproj", "{DABDBC30-D277-4AFE-AA54-EFF7CD27A325}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustaBlog.Contracts", "JustaBlog.Contracts\JustaBlog.Contracts.csproj", "{8F7E161F-DBD8-4C85-8405-E7124DD5F5DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustaBlog.Infrastructure", "JustaBlog.Infrastructure\JustaBlog.Infrastructure.csproj", "{63CA7E9D-C653-439B-B51E-E8032FC4E539}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustaBlog.Services", "JustaBlog.Services\JustaBlog.Services.csproj", "{EB98E3AC-39D0-4F0E-BC38-4EAD457C0F08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustaBlog.Common", "JustaBlog.Common\JustaBlog.Common.csproj", "{5F38E737-F599-43C3-AE2F-C19BD6616496}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +20,21 @@ Global
 		{DABDBC30-D277-4AFE-AA54-EFF7CD27A325}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DABDBC30-D277-4AFE-AA54-EFF7CD27A325}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DABDBC30-D277-4AFE-AA54-EFF7CD27A325}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F7E161F-DBD8-4C85-8405-E7124DD5F5DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F7E161F-DBD8-4C85-8405-E7124DD5F5DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F7E161F-DBD8-4C85-8405-E7124DD5F5DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F7E161F-DBD8-4C85-8405-E7124DD5F5DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63CA7E9D-C653-439B-B51E-E8032FC4E539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63CA7E9D-C653-439B-B51E-E8032FC4E539}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63CA7E9D-C653-439B-B51E-E8032FC4E539}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63CA7E9D-C653-439B-B51E-E8032FC4E539}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB98E3AC-39D0-4F0E-BC38-4EAD457C0F08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB98E3AC-39D0-4F0E-BC38-4EAD457C0F08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB98E3AC-39D0-4F0E-BC38-4EAD457C0F08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB98E3AC-39D0-4F0E-BC38-4EAD457C0F08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F38E737-F599-43C3-AE2F-C19BD6616496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F38E737-F599-43C3-AE2F-C19BD6616496}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F38E737-F599-43C3-AE2F-C19BD6616496}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F38E737-F599-43C3-AE2F-C19BD6616496}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
