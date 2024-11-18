@@ -1,0 +1,6 @@
+@JustaBlog_HostAddress = http://localhost:5102
+
+GET {{JustaBlog_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
