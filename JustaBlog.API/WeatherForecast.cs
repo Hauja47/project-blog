@@ -1,4 +1,4 @@
-namespace JustaBlog;
+namespace JustaBlog.API;
 
 public class WeatherForecast
 {
