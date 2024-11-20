@@ -6,15 +6,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddOpenIddict()
-    .AddCore(options =>
-    {
-        options
-            .UseEntityFrameworkCore()
-            .UseDbContext<BlogDbContext>()
-            .ReplaceDefaultEntities<Guid>();
-    });
-    
 builder.Services.AddDbContext<BlogDbContext>(options =>
 {
     options.UseNpgsql(
@@ -26,6 +17,31 @@ builder.Services.AddDbContext<BlogDbContext>(options =>
 
     options.UseOpenIddict<Guid>();
 });
+
+builder.Services.AddOpenIddict()
+    .AddCore(options =>
+    {
+        options
+            .UseEntityFrameworkCore()
+            .UseDbContext<BlogDbContext>()
+            .ReplaceDefaultEntities<Guid>();
+    })
+    .AddServer(options =>
+    {
+        options
+            .SetAuthorizationEndpointUris("connect/authorize")
+            .SetTokenEndpointUris("/connect/token")
+            .SetLogoutEndpointUris("/connect/logout");
+
+        options.AllowAuthorizationCodeFlow();
+        
+        options
+            .AddDevelopmentEncryptionCertificate()
+            .AddDevelopmentSigningCertificate();
+
+        options
+            .UseAspNetCore();
+    });
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
@@ -41,6 +57,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
