@@ -10,8 +10,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustaBlog.Services", "Justa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustaBlog.Common", "JustaBlog.Common\JustaBlog.Common.csproj", "{5F38E737-F599-43C3-AE2F-C19BD6616496}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustaBlog.Auth", "JustaBlog.Auth\JustaBlog.Auth.csproj", "{6B21424F-4D96-42A2-8D46-141DD56F1D92}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,9 +36,5 @@ Global
 		{5F38E737-F599-43C3-AE2F-C19BD6616496}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F38E737-F599-43C3-AE2F-C19BD6616496}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F38E737-F599-43C3-AE2F-C19BD6616496}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6B21424F-4D96-42A2-8D46-141DD56F1D92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6B21424F-4D96-42A2-8D46-141DD56F1D92}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6B21424F-4D96-42A2-8D46-141DD56F1D92}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6B21424F-4D96-42A2-8D46-141DD56F1D92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
