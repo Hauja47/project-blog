@@ -13,7 +13,8 @@ builder.Services.AddDbContext<BlogDbContext>(options =>
         o => o
             .MapEnum<RecordStatus>("record_status")
             .MapEnum<PostStatus>("post_status")
-            .MapEnum<InteractionType>("interaction_type"));
+            .MapEnum<InteractionType>("interaction_type")
+            .MigrationsAssembly("JustaBlog.Infrastructure"));
 });
 
 builder.Services.AddCors(options =>
